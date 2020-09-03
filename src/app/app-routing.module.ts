@@ -1,3 +1,4 @@
+import { FuncionarioCreateComponent } from './components/funcionarios/funcionario-create/funcionario-create.component';
 import { EmpresasUpdateComponent } from './components/empresas/empresas-update/empresas-update.component';
 import { EmpresasCrudComponent } from './views/empresas-crud/empresas-crud.component';
 import { EmpresasCreateComponent } from './components/empresas/empresas-create/empresas-create.component';
@@ -39,6 +40,10 @@ component: EmpresasCrudComponent
   {
     path: 'empresas/update/:id',
     component: EmpresasUpdateComponent
+  },
+  {
+    path: 'funcionarios/create',
+    component: FuncionarioCreateComponent
   }
   
 

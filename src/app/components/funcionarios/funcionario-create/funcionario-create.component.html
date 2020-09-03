@@ -1,0 +1,33 @@
+
+    <mat-card-title> Novo Funcionario </mat-card-title>
+    <form>
+        
+            <input matInput placeholder="Nome" 
+            [(ngModel)]="funcionario.nome" name="nome">
+        
+        
+            <input matInput placeholder="Matricula"
+            [(ngModel)]="funcionario.matricula" name="matricula">
+        
+   
+
+           
+            <label>Empresa:</label>
+            <select class="form-control" [ngModelOptions]="{standalone: true}"
+            [(ngModel)]="funcionario.empresa">
+            <option value="">Selecione</option>
+            <option *ngFor="let empresa of empresas" [ngValue]="empresa.id">
+                {{empresa.nome}}
+            </option>
+        </select>
+    </form>
+
+
+
+
+<button mat-raised-button (click)="createFuncionario()" color ="primary">
+    Salvar
+</button>
+<!-- <button mat-raised-button (click)="cancell()">
+    Cancelar
+</button> -->
