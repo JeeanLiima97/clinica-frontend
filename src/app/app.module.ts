@@ -41,6 +41,8 @@ import { EmpresasCrudComponent } from './views/empresas-crud/empresas-crud.compo
 import { EmpresasUpdateComponent } from './components/empresas/empresas-update/empresas-update.component';
 import { FuncionarioCrudComponent } from './views/funcionario-crud/funcionario-crud.component';
 import { FuncionarioCreateComponent } from './components/funcionarios/funcionario-create/funcionario-create.component';
+import { FuncionarioReadComponent } from './components/funcionarios/funcionario-read/funcionario-read.component';
+import { FuncionarioUpdateComponent } from './components/funcionarios/funcionario-update/funcionario-update.component';
 
 @NgModule({
   declarations: [
@@ -63,7 +65,9 @@ import { FuncionarioCreateComponent } from './components/funcionarios/funcionari
     EmpresasCrudComponent,
     EmpresasUpdateComponent,
     FuncionarioCrudComponent,
-    FuncionarioCreateComponent
+    FuncionarioCreateComponent,
+    FuncionarioReadComponent,
+    FuncionarioUpdateComponent
     
   ],
   imports: [

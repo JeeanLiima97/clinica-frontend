@@ -17,9 +17,14 @@ export class FuncionarioService {
   }
   read(): Observable<Funcionario[]> {
     return this.http.get<Funcionario[]>(this.baseURL)
+    
   }
   readByID(id: string): Observable<Funcionario> {
     const url = `${this.baseURL}/${id}`
     return this.http.get<Funcionario>(url)
+  }
+  update(funcionario: Funcionario): Observable<Funcionario>{
+    const url = `${this.baseURL}/${funcionario.id}`
+    return this.http.patch<Funcionario>(url, funcionario)
   }
 }

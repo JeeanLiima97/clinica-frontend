@@ -18,6 +18,8 @@ export class EmpresasReadComponent implements OnInit {
 
     this.empresaService.read().subscribe(empresas=> {
       this.empresas =empresas
+      console.log(empresas);
+      
     })
   }
 

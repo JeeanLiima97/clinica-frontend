@@ -34,7 +34,7 @@ export class FuncionarioCreateComponent implements OnInit {
   }
   createFuncionario(){
     this.funcionarioService.create(this.funcionario).subscribe(()=>{
-      this.router.navigate(['/funcionarios-create'])
+      this.router.navigate(['/funcionarios'])
     })
   }
 

@@ -1,3 +1,6 @@
+import { FuncionarioUpdateComponent } from './components/funcionarios/funcionario-update/funcionario-update.component';
+import { FuncionarioCrudComponent } from './views/funcionario-crud/funcionario-crud.component';
+import { FuncionarioReadComponent } from './components/funcionarios/funcionario-read/funcionario-read.component';
 import { FuncionarioCreateComponent } from './components/funcionarios/funcionario-create/funcionario-create.component';
 import { EmpresasUpdateComponent } from './components/empresas/empresas-update/empresas-update.component';
 import { EmpresasCrudComponent } from './views/empresas-crud/empresas-crud.component';
@@ -42,9 +45,18 @@ component: EmpresasCrudComponent
     component: EmpresasUpdateComponent
   },
   {
+    path: 'funcionarios',
+    component: FuncionarioCrudComponent
+  },
+  {
     path: 'funcionarios/create',
     component: FuncionarioCreateComponent
+  },
+  {
+    path: 'funcionarios/update/:id',
+    component: FuncionarioUpdateComponent
   }
+
   
 
 ];
