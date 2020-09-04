@@ -43,6 +43,8 @@ import { FuncionarioCrudComponent } from './views/funcionario-crud/funcionario-c
 import { FuncionarioCreateComponent } from './components/funcionarios/funcionario-create/funcionario-create.component';
 import { FuncionarioReadComponent } from './components/funcionarios/funcionario-read/funcionario-read.component';
 import { FuncionarioUpdateComponent } from './components/funcionarios/funcionario-update/funcionario-update.component';
+import { MedicoCreateComponent } from './components/medicos/medico-create/medico-create.component';
+import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +69,9 @@ import { FuncionarioUpdateComponent } from './components/funcionarios/funcionari
     FuncionarioCrudComponent,
     FuncionarioCreateComponent,
     FuncionarioReadComponent,
-    FuncionarioUpdateComponent
+    FuncionarioUpdateComponent,
+    MedicoCreateComponent,
+    MedicoCrudComponent
     
   ],
   imports: [

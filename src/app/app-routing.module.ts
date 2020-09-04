@@ -1,3 +1,5 @@
+import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
+import { MedicoCreateComponent } from './components/medicos/medico-create/medico-create.component';
 import { FuncionarioUpdateComponent } from './components/funcionarios/funcionario-update/funcionario-update.component';
 import { FuncionarioCrudComponent } from './views/funcionario-crud/funcionario-crud.component';
 import { FuncionarioReadComponent } from './components/funcionarios/funcionario-read/funcionario-read.component';
@@ -55,6 +57,14 @@ component: EmpresasCrudComponent
   {
     path: 'funcionarios/update/:id',
     component: FuncionarioUpdateComponent
+  },
+  {
+    path: 'medicos',
+    component: MedicoCrudComponent
+  },
+  {
+    path: 'medicos/create',
+    component: MedicoCreateComponent
   }
 
   
