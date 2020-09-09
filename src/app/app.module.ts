@@ -47,6 +47,7 @@ import { MedicoCreateComponent } from './components/medicos/medico-create/medico
 import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
 import { MedicoReadComponent } from './components/medicos/medico-read/medico-read.component';
 import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
+import { ExamesCreateComponent } from './components/exames/exames-create/exames-create.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { MedicoUpdateComponent } from './components/medicos/medico-update/medico
     MedicoCreateComponent,
     MedicoCrudComponent,
     MedicoReadComponent,
-    MedicoUpdateComponent
+    MedicoUpdateComponent,
+    ExamesCreateComponent
     
   ],
   imports: [

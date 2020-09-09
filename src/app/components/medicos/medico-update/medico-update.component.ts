@@ -20,6 +20,7 @@ export class MedicoUpdateComponent implements OnInit {
   constructor(private medicoService: MedicosService ,private router: Router,
     private route: ActivatedRoute) { }
 
+      id = this.medico.id;
   ngOnInit(): void {
 
     const id = this.route.snapshot.paramMap.get('id');

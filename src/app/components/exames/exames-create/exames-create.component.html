@@ -1,0 +1,50 @@
+<mat-card-title> Novo Exame </mat-card-title>
+<form>
+    
+    
+
+
+       
+        <label>Medico Responsavel:</label>
+        <select class="form-control" [ngModelOptions]="{standalone: true}"
+        [(ngModel)]="exame.medico">
+        <option value="">Selecione</option>
+        <option *ngFor="let medico of medicos" [ngValue]="medico.id">
+            {{medico.nome}}
+        </option>
+    </select>
+
+
+    <label>Funcionario:</label>
+        <select class="form-control" [ngModelOptions]="{standalone: true}"
+        [(ngModel)]="exame.funcionario">
+        <option value="">Selecione</option>
+        <option *ngFor="let funcionario of funcionarios" [ngValue]="funcionario.id">
+            {{funcionario.nome}}
+        </option>
+    </select>
+
+
+    <label>Tipo Exame:</label>
+    <select class="form-control" [ngModelOptions]="{standalone: true}"
+    [(ngModel)]="exame.tipoExame">
+    <option value="">Selecione</option>
+    <option value="ADMISSIONAL">ADMISSIONAL</option>
+    <option value="PERIODICO">PERIODICO</option>
+    <option value="RETORNO">RETORNO</option>
+    <option value="DEMISSIONAL">DEMISSIONAL</option>
+    <option value="TRANSFERENCIA">TRANSFERENCIA</option>
+
+
+    
+
+</select>
+
+</form>
+
+
+
+
+<button mat-raised-button (click)="createExame()" color ="primary">
+Salvar
+</button>
