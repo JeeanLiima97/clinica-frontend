@@ -48,6 +48,7 @@ import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
 import { MedicoReadComponent } from './components/medicos/medico-read/medico-read.component';
 import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
 import { ExamesCreateComponent } from './components/exames/exames-create/exames-create.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -96,7 +97,9 @@ import { ExamesCreateComponent } from './components/exames/exames-create/exames-
     MatFormFieldModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    Ng2SearchPipeModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
