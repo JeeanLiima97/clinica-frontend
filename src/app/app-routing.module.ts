@@ -1,3 +1,4 @@
+import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
 import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
 import { MedicoCreateComponent } from './components/medicos/medico-create/medico-create.component';
 import { FuncionarioUpdateComponent } from './components/funcionarios/funcionario-update/funcionario-update.component';
@@ -65,6 +66,10 @@ component: EmpresasCrudComponent
   {
     path: 'medicos/create',
     component: MedicoCreateComponent
+  },
+  {
+    path: 'medicos/update/:id',
+    component: MedicoUpdateComponent
   }
 
   
