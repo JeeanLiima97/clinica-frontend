@@ -1,3 +1,4 @@
+import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 import { ExamesCreateComponent } from './components/exames/exames-create/exames-create.component';
 import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
 import { MedicoCrudComponent } from './views/medico-crud/medico-crud.component';
@@ -76,7 +77,6 @@ component: EmpresasCrudComponent
     path: 'exames/create',
     component: ExamesCreateComponent
   }
-
   
 
 ];
