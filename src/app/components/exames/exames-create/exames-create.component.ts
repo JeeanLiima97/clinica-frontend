@@ -20,7 +20,9 @@ export class ExamesCreateComponent implements OnInit {
     id: null,
     medico: null,
     funcionario: null,
-    tipoExame: ''
+    tipoExame: '',
+    riscoOcupacional: '',
+    observacao: ''
   }
   medicos: Medico[];
   funcionarios: Funcionario[];

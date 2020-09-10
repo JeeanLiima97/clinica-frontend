@@ -2,5 +2,7 @@ export interface Exame {
     id?: number,
     medico: number,
     funcionario: number,
-    tipoExame: string
+    tipoExame: string,
+    observacao: string,
+    riscoOcupacional: string
 }

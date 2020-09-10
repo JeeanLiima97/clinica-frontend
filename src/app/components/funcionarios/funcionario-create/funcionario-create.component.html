@@ -1,4 +1,4 @@
-
+<mat-card>
     <mat-card-title> Novo Funcionario </mat-card-title>
     <form>
         
@@ -9,7 +9,8 @@
             <input matInput placeholder="Matricula"
             [(ngModel)]="funcionario.matricula" name="matricula">
         
-   
+    
+
 
            
             <label>Empresa:</label>
@@ -22,7 +23,7 @@
         </select>
     </form>
 
-
+</mat-card>
 
 
 <button mat-raised-button (click)="createFuncionario()" color ="primary">
