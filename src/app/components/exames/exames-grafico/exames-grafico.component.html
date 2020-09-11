@@ -1,0 +1,25 @@
+<div class="mat-elevation-z10">
+  <table mat-table  [dataSource]="riscos">
+      <!-- Id Column -->
+      <ng-container matColumnDef="riscos">
+          <th mat-header-cell *matHeaderCellDef>Riscos</th>
+          <td mat-cell *matCellDef="let row">{{row.risco}}</td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="quantidade">
+          <th mat-header-cell *matHeaderCellDef>Quantidade</th>
+          <td mat-cell *matCellDef="let row">{{row.qntd}}</td>
+      </ng-container>
+
+     
+
+       
+        
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+
+</div>

@@ -49,6 +49,8 @@ import { MedicoReadComponent } from './components/medicos/medico-read/medico-rea
 import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
 import { ExamesCreateComponent } from './components/exames/exames-create/exames-create.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { ExamesGraficoComponent } from './components/exames/exames-grafico/exames-grafico.component';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -78,7 +80,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MedicoCrudComponent,
     MedicoReadComponent,
     MedicoUpdateComponent,
-    ExamesCreateComponent
+    ExamesCreateComponent,
+    ExamesGraficoComponent,
+    
     
   ],
   imports: [
@@ -98,7 +102,9 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
+    ChartsModule,
     Ng2SearchPipeModule,
+    
     
   ],
   providers: [],
