@@ -1,0 +1,71 @@
+<mat-card class="home mat-evelation-z3">
+
+    <mat-card-title class="title">
+        Listagem de Exames  
+  </mat-card-title>
+    
+
+
+<div class="mat-elevation-z10">
+    <table mat-table  [dataSource]="exames">
+        <!-- Id Column -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef>Id</th>
+            <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="medico">
+            <th mat-header-cell *matHeaderCellDef>Medico</th>
+            <td mat-cell *matCellDef="let row">{{row.medico.nome}}</td>
+        </ng-container>
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="funcionario">
+            <th mat-header-cell *matHeaderCellDef>Funcionario</th>
+            <td mat-cell *matCellDef="let row">{{row.funcionario.nome }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="empresa">
+            <th mat-header-cell *matHeaderCellDef>Empresa</th>
+            <td mat-cell *matCellDef="let row">{{row.funcionario.empresa.nome }}</td>
+        </ng-container>
+
+
+        <!-- Price Column -->
+        <ng-container matColumnDef="tipoExame">
+            <th mat-header-cell *matHeaderCellDef>Tipo de exame</th>
+            <td mat-cell *matCellDef="let row">{{row.tipoExame }}</td>
+        </ng-container>
+
+           <!-- Price Column -->
+           <ng-container matColumnDef="riscoOcupacional">
+            <th mat-header-cell *matHeaderCellDef>Risco Ocupacional</th>
+            <td mat-cell *matCellDef="let row">{{row.riscoOcupacional }}</td>
+        </ng-container>
+
+
+
+
+          <!-- Action Column -->
+          <ng-container matColumnDef="action">
+            <th mat-header-cell *matHeaderCellDef>Ações</th>
+            <td mat-cell *matCellDef="let row">
+                
+                <a routerLink="/exames/delete/{{row.id}}">
+                    <i class="material-icons delete">
+                        delete
+                    </i>
+                </a>
+                   
+             
+
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+
+</div>

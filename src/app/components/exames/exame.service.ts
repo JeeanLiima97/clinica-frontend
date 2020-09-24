@@ -12,6 +12,7 @@ export class ExameService {
 
   baseURL = "http://localhost:8083/api/exames"
   urlGraf= "http://localhost:8083/api/exames/risco"
+  urlEmpresa ="http://localhost:8083/api/exames/risco"
 
   constructor(private snackBar: MatSnackBar,
     private http: HttpClient) { }
@@ -22,10 +23,10 @@ export class ExameService {
     read(): Observable<Exame[]> {
       return this.http.get<Exame[]>(this.baseURL)
     }
-    // readByID(id: string): Observable<Exame> {
-    //   const url = `${this.baseURL}/${id}`
-    //   return this.http.get<Exame>(url)
-    // }
+    readByID(id: string): Observable<Exame> {
+      const url = `${this.baseURL}/${id}`
+      return this.http.get<Exame>(url)
+    }
     // update(exame: Exame): Observable<Exame>{
     //   const url = `${this.baseURL}/${exame.id}`
     //   return this.http.put<Exame>(url, exame)
@@ -33,4 +34,11 @@ export class ExameService {
     readGraf(): Observable<ExameGraf[]> {
       return this.http.get<ExameGraf[]>(this.urlGraf)
     }
+    readEmpresa():Observable<ExameGraf[]> {
+      return this.http.get<ExameGraf[]>(this.urlEmpresa)
+    }
+    delete(id: number): Observable<Exame>{
+      const url = `${this.baseURL}/${id}`
+      return this.http.delete<Exame>(url)
+    } 
 }

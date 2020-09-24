@@ -19,7 +19,7 @@ export class ExamesGraficoComponent implements OnInit {
   
   ngOnInit(): void {
 
-    this.exameService.readGraf().subscribe((response) => {
+    this.exameService.readEmpresa().subscribe((response) => {
             this.riscos=response
             console.log(this.riscos);
             

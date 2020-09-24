@@ -1,0 +1,16 @@
+table{
+    width: 100%;
+
+}
+i.edit{
+    color: #d9cd26;
+    margin-right: 15px;
+}
+.delete{
+    color: #e35e6b
+}
+.home .title{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}

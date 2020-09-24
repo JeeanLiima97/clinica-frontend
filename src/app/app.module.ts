@@ -52,6 +52,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { ExamesGraficoComponent } from './components/exames/exames-grafico/exames-grafico.component';
 import { ChartsModule } from 'ng2-charts';
 
+import { ExamesCrudComponent } from './views/exames-crud/exames-crud.component';
+import { ExamesReadComponent } from './components/exames/exames-read/exames-read.component';
+import { ExamesDeleteComponent } from './components/exames/exames-delete/exames-delete.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -82,6 +86,9 @@ import { ChartsModule } from 'ng2-charts';
     MedicoUpdateComponent,
     ExamesCreateComponent,
     ExamesGraficoComponent,
+    ExamesCrudComponent,
+    ExamesReadComponent,
+    ExamesDeleteComponent,
     
     
   ],

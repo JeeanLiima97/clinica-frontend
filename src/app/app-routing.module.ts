@@ -1,3 +1,5 @@
+import { ExamesDeleteComponent } from './components/exames/exames-delete/exames-delete.component';
+import { ExamesCrudComponent } from './views/exames-crud/exames-crud.component';
 import { ProductRead2Component } from './components/product/product-read2/product-read2.component';
 import { ExamesCreateComponent } from './components/exames/exames-create/exames-create.component';
 import { MedicoUpdateComponent } from './components/medicos/medico-update/medico-update.component';
@@ -76,7 +78,16 @@ component: EmpresasCrudComponent
   {
     path: 'exames/create',
     component: ExamesCreateComponent
+  },
+  {
+    path: 'exames',
+    component: ExamesCrudComponent
+  },
+  {
+    path: 'exames/delete/:id',
+    component: ExamesDeleteComponent
   }
+
   
 
 ];
